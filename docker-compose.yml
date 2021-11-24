@@ -1,0 +1,8 @@
+app:
+  build: ./
+  volumes:
+    - ./:/home/loquillo/lab/protest
+  ports:
+    - 8080:8080
+  command:
+    sh -c 'npm i && node ./bin/www'
